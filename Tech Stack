@@ -1,0 +1,8 @@
+🚀 AutoInvoice Engine – n8n Automation Workflow  
+📌 Project Overview
+
+AutoInvoice Engine is a fully automated invoice processing system built using n8n automation platform and OpenAI AI models.
+
+This workflow eliminates manual data entry by automatically extracting structured information from invoices (PDFs and Images) and storing it in Excel with duplicate validation.
+
+The system is designed for businesses that receive daily invoices and need an intelligent, automated, and error-free way to process them.
