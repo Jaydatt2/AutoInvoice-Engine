@@ -1,0 +1,216 @@
+🚀 AutoInvoice Engine – n8n Automation Workflow
+📌 Project Overview
+
+AutoInvoice Engine is a fully automated invoice processing system built using n8n automation platform and OpenAI AI models.
+This workflow eliminates manual data entry by automatically extracting structured information from invoices (PDFs and Images) and storing it in Excel with duplicate validation.
+
+The system is designed for businesses that receive daily invoices and need an intelligent, automated way to process them.
+
+🎯 Problem Statement
+
+Manual invoice processing is:
+
+Time-consuming
+
+Error-prone
+
+Inefficient
+
+Repetitive
+
+This tool solves that problem by:
+
+✔ Automatically detecting new invoices
+✔ Extracting key details using AI
+✔ Preventing duplicate entries
+✔ Storing structured data automatically
+
+🛠 Tech Stack
+
+n8n – Workflow Automation Platform
+
+OpenAI GPT-4 / Vision Models – AI Data Extraction
+
+Google Drive API – File Trigger & Storage
+
+Microsoft Excel / Google Sheets – Data Storage
+
+OCR & Text Processing – Intelligent Parsing
+
+🔁 Workflow Architecture
+End-to-End Automation Flow:
+
+Google Drive Trigger
+
+Monitors a specific folder/file
+
+Detects new or updated invoices automatically
+
+File Download & Configuration
+
+Retrieves the uploaded invoice file
+
+Reads file metadata
+
+Identifies file type
+
+Routing by File Type
+
+PDF → Text extraction pipeline
+
+Image → OCR-based extraction pipeline
+
+AI-Based Data Extraction
+
+Uses OpenAI GPT models
+
+Extracts structured fields:
+
+Bill Date
+
+Invoice Number
+
+Party Name
+
+GST Number
+
+Total Amount
+
+Data Validation & Processing
+
+Generates system timestamp
+
+Checks for duplicate invoices
+
+Prepares structured row data
+
+Final Storage
+
+Appends verified data into Excel sheet
+
+📂 Extracted Data Fields
+
+The system intelligently extracts the following mandatory fields:
+| Field Name     | Description               |
+| -------------- | ------------------------- |
+| Bill Date      | Invoice date (YYYY-MM-DD) |
+| Invoice Number | Unique bill identifier    |
+| Party Name     | Vendor or supplier name   |
+| GST Number     | Tax registration number   |
+| Total Amount   | Final invoice amount      |
+
+✨ Key Features
+
+✔ Fully automated invoice processing
+✔ Supports both PDF and Image invoices
+✔ AI-powered intelligent data extraction
+✔ Duplicate invoice prevention
+✔ Structured Excel data storage
+✔ Real-time processing
+✔ Zero manual intervention
+
+🧩 Workflow Components
+Triggers
+
+Google Drive Trigger – monitors for new invoices
+
+Core Nodes Used
+
+Google Drive
+
+Extract from File
+
+OpenAI GPT-4 Vision
+
+OpenAI Chat Model
+
+Structured Output Parser
+
+Date & Time Generator
+
+Microsoft Excel Integration
+
+🧪 How to Use
+Prerequisites
+
+You need:
+
+n8n account (cloud or self-hosted)
+
+Google Drive access
+
+OpenAI API key
+
+Microsoft Excel / Google Sheets
+
+Setup Steps
+
+Import Workflow
+
+Open n8n
+
+Import My_workflow.json file
+
+Configure Credentials
+
+Google Drive OAuth
+
+OpenAI API Key
+
+Microsoft Excel / Google Sheets
+
+Set Resources
+
+Select correct Drive folder
+
+Configure Excel workbook, worksheet, and table
+
+Activate Workflow
+
+👉 Done! System is now fully automated.
+
+📈 Business Benefits
+
+Saves hours of manual work
+
+Reduces human errors
+
+Standardizes invoice processing
+
+Improves efficiency
+
+Ensures data accuracy
+
+🚧 Future Enhancements
+
+Possible upgrades:
+
+Email notifications
+
+Error logging system
+
+Dashboard reporting
+
+Database integration
+
+Multi-user support
+
+Auto-generated reports
+
+📁 Repository Structure⚠️ Security Note
+
+This project does NOT include:
+
+API keys
+
+Credentials
+
+Sensitive business data
+
+All credentials must be configured locally in n8n.
+
+👨‍💻 Author
+
+Developed by:
+Jaydatt Limbachiya
+Prevents duplicate entries
